@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url(./fonts/IbarraRealNova-Bold.ttf);
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url(./fonts/PublicSans-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: 0;
+}
+
+:root {
+  --primary-color: green;
+  --color-bg: #1f2641;
+  --containe-lg: 76%;
+  --container-md: 90%;
+  --container-sm: 94%;
+  --transition: all 0.4s ease-in-out;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.b11 {
+  margin: 0 auto;
+}
+.nav-list {
+  display: flex;
+  gap: 100px;
+  margin-left: 200px;
+}
+.nav-link {
+  color: #33323d;
+  transition: all 0.4s ease-in-out;
+}
+.nav-link:hover {
+  color: #5fb4a2;
+}
+.hero {
+  margin: 150px auto;
+  background-image: url("./images/Bitmap@2x.jpg");
+  width: 1200px;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  padding-top: 330px;
+}
+
+.hero-content {
+  width: 400px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 10px;
+}
+.deesc {
+  font-size: 50px;
+}
+.btn {
+  width: 200px;
+  padding: 10px;
+  background: rgb(32, 32, 49);
+  color: azure;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  background: whitesmoke;
+  border: 1px solid rgb(169, 169, 218);
+  color: rgb(37, 37, 55);
+}
+.b2 {
+  display: flex;
+}
+.bb2 {
+  display: flex;
+  margin: 200px auto;
+  width: 1200px;
+  gap: 150px;
+}
+.textt {
+  width: 400px;
+}
+.about1 {
+  font-size: 16px;
+  line-height: 30px;
+}
+.about {
+  font-size: 40px;
+  height: 100px;
+  font-family: "Ibarra Real Nova";
+}
+.hr {
+  margin-bottom: 60px;
+}
+.btn1 {
+  width: 150px;
+  margin-top: 100px;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  transition: all 0.4s ease-in-out;
+}
+
+.btn1:hover {
+  color: white;
+  background: rgb(49, 49, 69);
+}
+.hr1 {
+  margin-top: 50px;
+}
+.text1 {
+  font-size: 40px;
+  font-family: "Ibarra Real Nova";
+}
+.b5 {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  width: 1200px;
+}
+.texxt {
+  width: 400px;
+}
+.b21 {
+  margin-top: 40px;
+  margin-left: 500px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding-left: 80px;
+}
+.list {
+  display: flex;
+  gap: 30px;
+}
+.link {
+  color: whitesmoke;
+  transition: all 0.4s ease-in-out;
+}
+.link:hover {
+  color: rgb(144, 113, 113);
+}
+.b6 {
+  width: 1440px;
+  background: rgb(47, 47, 65);
+  margin: 0 auto;
+}
+.logojon {
+  padding-left: 700px;
+}
+.nav > button {
+  display: none;
+}
+
+@media screen and (max-width: 460px) {
+  .nav > button {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: rgb(100, 35, 35);
+    cursor: pointer;
+    border: transparent;
+  }
+  .nav-list {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    width: 18rem;
+    height: fit-content;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
+  .nav-list > li {
+    width: 100%;
+    height: 5.8rem;
+    animation: anime 400ms linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+  }
+  .nav > button#closebtn {
+    display: none;
+  }
+  .nav-list > li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+  .nav-list > li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+  @keyframes anime {
+    0% {
+      transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+    }
+    100% {
+      transform: rotateZ(0) rotateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .nav-list > li > a {
+    background: greenyellow;
+    box-shadow: -4rem 6rem 10rem #000;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .nav-list > li > a:hover {
+    background: rgb(191, 219, 150);
+    color: white;
+  }
+
+  .bb2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textt {
+    margin: 0 auto;
+  }
+  .loog {
+    margin: 0 auto;
+  }
+  .hero {
+    margin-top: 200px;
+    width: 600px;
+  }
+  .hero-content {
+    margin: 400px auto;
+  }
+  .b5 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .b6 {
+    width: 1440px;
+  }
+
+  .wrapper {
+    margin: 1200px;
+    margin: 0 auto;
+  }
+  .texxt {
+    margin-left: 400px;
+  }
+  .b21 {
+    margin-right: 500px;
+  }
+  .hr12 {
+    width: 500px;
+    margin: 50px auto;
+  }
+  .g5 {
+    margin-top: 300px;
+  }
+  .nav {
+    width: 600px;
+  }
+}
